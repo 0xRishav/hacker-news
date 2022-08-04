@@ -1,38 +1,63 @@
 .App {
   text-align: center;
+  width: 88%;
+  margin: auto;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.logo {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 2.4rem;
+  line-height: 2.9rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.homepage-header {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
+  height: 10vh;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.search-form {
+  display: flex;
+  justify-content: space-between;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.search-box {
+  border: none;
+  border-bottom: #282c34 solid 0.1rem;
+  width: 20vw;
+  outline: unset;
+  margin-right: 4rem;
+  background: var(--light-blue);
+}
+
+.search-box::placeholder {
+  opacity: 40%;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 1.6rem;
+  line-height: 1.9rem;
+  font-family: "Poppins", sans-serif;
+}
+
+.checkbox-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sort-checkbox {
+  cursor: pointer;
+  width: 2.5rem;
+  height: 2.5rem;
+  margin-right: 0.4rem;
+}
+
+.sort-text {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 1.6rem;
+  line-height: 1.9rem;
+  margin-left: 0.4rem;
 }
