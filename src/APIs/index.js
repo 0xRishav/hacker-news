@@ -7,5 +7,5 @@ export const getSearchApi = (query, isSortedByDate) => {
 };
 
 export const getPostData = (postId) => {
-  return `${BaseUrl}/v1/items/${postId}`;
+  return `${BaseUrl}/items/${postId}`;
 };
