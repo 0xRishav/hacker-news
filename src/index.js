@@ -4,13 +4,20 @@ import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import { AppContextProvider } from "./Contexts/AppContext";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import NewsPage from "./Pages/NewsPage/NewsPage";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <AppContextProvider>
-      <App />
-    </AppContextProvider>
+    <BrowserRouter>
+      <AppContextProvider>
+        <Routes>
+          <Route path="/" element={<App />} />
+          <Route path="/posts/:postId" element={<NewsPage />} />
+        </Routes>
+      </AppContextProvider>
+    </BrowserRouter>
   </React.StrictMode>
 );
 
