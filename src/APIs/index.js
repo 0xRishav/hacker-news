@@ -1,4 +1,4 @@
-const BaseUrl = "http://hn.algolia.com/api/v1";
+const BaseUrl = "https://hn.algolia.com/api/v1";
 
 export const getSearchApi = (query, isSortedByDate) => {
   return isSortedByDate
