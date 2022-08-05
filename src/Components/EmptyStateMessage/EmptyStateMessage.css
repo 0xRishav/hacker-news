@@ -1,0 +1,11 @@
+.empty-state-message-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50vh;
+  /* width: 100vw; */
+}
+.empty-state-message {
+  font-size: 3rem;
+  font-weight: bold;
+}
