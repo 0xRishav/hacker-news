@@ -31,6 +31,7 @@
   font-weight: 500;
   font-size: 2.4rem;
   line-height: 2.9rem;
+  text-align: left;
 }
 
 .news-author-upvotes {
@@ -64,4 +65,29 @@
   font-weight: 500;
   font-size: 1.2rem;
   line-height: 1.9rem;
+}
+
+@media (max-width: 640px) {
+  .title-container-date-wrapper {
+    flex-direction: column;
+  }
+  .tag-wrapper {
+    flex-wrap: wrap;
+  }
+  .tag {
+    margin: 0.5rem;
+    margin-left: 0;
+  }
+
+  .news-card {
+    padding: 1rem;
+  }
+
+  .tag-wrapper {
+    margin-left: 0;
+  }
+
+  .date {
+    margin-top: 0.6rem;
+  }
 }

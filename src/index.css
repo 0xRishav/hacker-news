@@ -37,3 +37,9 @@ code {
   justify-content: center;
   height: 100vh;
 }
+
+@media (max-width: 640px) {
+  :root {
+    font-size: 7px;
+  }
+}

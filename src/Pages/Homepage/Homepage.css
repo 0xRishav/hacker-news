@@ -61,3 +61,16 @@
   line-height: 1.9rem;
   margin-left: 0.4rem;
 }
+
+@media (max-width: 640px) {
+  .Homepage {
+    width: 94%;
+  }
+  .search-box {
+    width: 49vw;
+  }
+
+  .homepage-header {
+    flex-wrap: wrap;
+  }
+}

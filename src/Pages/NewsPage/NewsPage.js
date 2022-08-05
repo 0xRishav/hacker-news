@@ -9,10 +9,12 @@ import Loader from "../../Components/Loader/Loader";
 import { AppContext } from "../../Contexts/AppContext";
 import getFormatedDates from "../../utils/getFormatedDates";
 import "./NewsPage.css";
+import useWindowSize from "../../custom-hooks/useWindowSize";
 
 function NewsPage() {
   const { postId } = useParams();
   const { isLoading, setLoading, showToast } = useContext(AppContext);
+  const { height, width } = useWindowSize();
   const [newsData, setNewsData] = useState({});
 
   useEffect(() => {
@@ -70,7 +72,10 @@ function NewsPage() {
         </div>
         <span className="back-arrow-container">
           <Link to={"/"} style={{ all: "unset", cursor: "pointer" }}>
-            <MdOutlineArrowBack className="back-arrow" size={40} />
+            <MdOutlineArrowBack
+              className="back-arrow"
+              size={width < 640 ? 24 : 40}
+            />
           </Link>
           <div className="back-btn-text">Back</div>
         </span>
@@ -86,7 +91,7 @@ function NewsPage() {
                 </div>
               </div>
               <a href={`${newsData?.url}`} target="_blank">
-                <BiLinkAlt className="link-icon" size={30} />
+                <BiLinkAlt className="link-icon" size={width < 640 ? 24 : 30} />
               </a>
             </div>
           </div>
