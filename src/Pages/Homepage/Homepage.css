@@ -1,0 +1,63 @@
+.Homepage {
+  text-align: center;
+  width: 88%;
+  margin: auto;
+}
+
+.logo {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 2.4rem;
+  line-height: 2.9rem;
+}
+
+.homepage-header {
+  display: flex;
+  justify-content: space-between;
+  height: 10vh;
+  align-items: center;
+}
+
+.search-form {
+  display: flex;
+  justify-content: space-between;
+}
+
+.search-box {
+  border: none;
+  border-bottom: #282c34 solid 0.1rem;
+  width: 20vw;
+  outline: unset;
+  margin-right: 4rem;
+  background: var(--light-blue);
+}
+
+.search-box::placeholder {
+  opacity: 40%;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 1.6rem;
+  line-height: 1.9rem;
+  font-family: "Poppins", sans-serif;
+}
+
+.checkbox-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sort-checkbox {
+  cursor: pointer;
+  width: 2.5rem;
+  height: 2.5rem;
+  margin-right: 0.4rem;
+}
+
+.sort-text {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 1.6rem;
+  line-height: 1.9rem;
+  margin-left: 0.4rem;
+}
