@@ -74,6 +74,7 @@ function Homepage() {
               type="checkbox"
               checked={sortByDate}
               className="sort-checkbox"
+              value={searchQuery}
               onClick={() => {
                 setSortByDate((prev) => !prev);
               }}
