@@ -3,25 +3,9 @@ import { Link } from "react-router-dom";
 import getFormatedDates from "../../utils/getFormatedDates";
 import "./NewsCard.css";
 
-function NewsCard({
-  author,
-  comment_text,
-  created_at,
-  created_at_i,
-  num_comments,
-  objectID,
-  parent_id,
-  points,
-  story_id,
-  story_text,
-  story_title,
-  story_ur,
-  title,
-  url,
-  _tags,
-}) {
+function NewsCard({ author, created_at, objectID, points, title, _tags }) {
   return (
-    <Link to={`/posts/${objectID}`}>
+    <Link to={`/posts/${objectID}`} style={{ all: "unset" }}>
       <div className="news-card">
         <div className="title-container-date-wrapper">
           <div className="news-title-tags-container">
@@ -32,8 +16,10 @@ function NewsCard({
               By {author} | {points} upvotes
             </div>
             <div className="tag-wrapper">
-              {_tags.map((tag) => (
-                <div className="tag">{tag}</div>
+              {_tags.map((tag, i) => (
+                <div key={i} className="tag">
+                  {tag}
+                </div>
               ))}
             </div>
           </div>

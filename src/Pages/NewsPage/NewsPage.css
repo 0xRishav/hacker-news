@@ -50,3 +50,10 @@
   font-size: 1.6rem;
   color: gery;
 }
+
+.loader-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
