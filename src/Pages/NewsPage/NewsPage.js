@@ -97,12 +97,15 @@ function NewsPage() {
           </div>
         </div>
         <div className="comments-heading">Comments</div>
-        {newsData.children?.length > 0 &&
-          newsData.children.map((children) => renderComments(children, 2))}
+        {newsData.children?.length > 0 ? (
+          newsData.children.map((children) => renderComments(children, 2))
+        ) : (
+          <EmptyStateMessage message={"No comments found"} />
+        )}
       </div>
     </>
   ) : (
-    <div message={"Sorry. No post data available"} />
+    <EmptyStateMessage message={"Sorry. No post data available"} />
   );
 }
 
