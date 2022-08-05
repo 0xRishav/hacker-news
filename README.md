@@ -15,7 +15,7 @@
 
 
 # Commands to start the application
-- git clone 
+- git clone https://github.com/0xRishav/hybr1d-assignment.git
 - cd hybr1d-assignment
 - npm install (if there are any issues with dependency tree use --force or --legacy-peer-deps)
 - npm start
